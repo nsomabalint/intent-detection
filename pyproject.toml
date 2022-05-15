@@ -18,6 +18,8 @@ matplotlib = "^3.5.2"
 transformers = "^4.19.1"
 datasets = "^2.2.1"
 sentence-transformers = "^2.2.0"
+python-dotenv = "^0.20.0"
+openai = "^0.18.1"
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0.0"
