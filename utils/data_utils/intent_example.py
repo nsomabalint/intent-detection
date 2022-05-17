@@ -36,5 +36,7 @@ def load_dataset_df():
                 examples.append((text.strip(), label.strip(), ds_name))
 
     df = pd.DataFrame(examples, columns=["text", "intent", "ds_name"])
+    df = df.sample(frac=1.0)
+    df = df.reset_index(drop=True)
 
     return df
